@@ -20,6 +20,8 @@ module NavigationHelpers
 				path = '/translations/' + get_language_code(Regexp.last_match(1))
 			when /^organization list$/i
 				path = '/organizations/'
+                        when /^new user$/i
+                                path='/users/new'
 		end
 
 		if path.is_a?(Symbol)

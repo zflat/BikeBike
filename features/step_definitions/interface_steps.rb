@@ -88,7 +88,9 @@ Then(/^I (should )?see (.+)$/) do | a, item |
 		expect(page).to have_selector('#'+Regexp.last_match(2)+' img')
 	elsif /(the|a)?\s?(.+) link$/ =~ item
 		expect(page).to have_link Regexp.last_match(2)
-	else
+	elsif /(the|a)?\s?(.+) button$/ =~ item
+    		expect(page).to have_button Regexp.last_match(2)      
+        else
 		expect(page).to have_text item
 	end
 end
