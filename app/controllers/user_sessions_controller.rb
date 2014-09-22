@@ -9,6 +9,7 @@ class UserSessionsController < ApplicationController
 			redirect_to session.delete(:return_to) || 'pages#home'
 		else
 			flash.now[:alert] = "Login failed"
+			@user = User.new
 			render action: "new"
 		end
 	end

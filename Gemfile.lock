@@ -424,6 +424,7 @@ DEPENDENCIES
   sitemap_generator
   sorcery (>= 0.8.1)
   uglifier (>= 1.3.0)
+  unicorn
   wdm (>= 0.1.0)
   webmock
   wysiwyg-rails

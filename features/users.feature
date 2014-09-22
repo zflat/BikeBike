@@ -10,5 +10,5 @@ Feature: Users
 	And I fill in my password with mypasswordtest
 	And I fill in my password_confirmation with mypasswordtest
 	And I press register
-	Then I should see my account page
+	Then I should see User was successfully created
 	

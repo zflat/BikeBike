@@ -17,7 +17,7 @@
 		%link{ href: asset_path('apple-touch-icon-144x144.png'), rel: 'apple-touch-icon', sizes: '144x144' }
 		= yield :head
 		=# javascript_include_tag '//use.typekit.net/iqv7hcg.js'
-		=# javascript_include_tag 'application'
+		= javascript_include_tag 'application'
 		=# javascript_include_tag 'nested_form'
 
 	%body{ class: (yield_or_default :page_style) }

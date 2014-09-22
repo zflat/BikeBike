@@ -8,3 +8,10 @@
 		= link_to (_'Conferences'), :conferences, {:class => ['button', 'conference']}
 		= link_to (_'Organizations'), {:controller => :organizations}, {:class => ['button', 'organization']}
 		= link_to (_'Resources'), '/resources/', :class => ['button', 'article']
+	%ul
+		- if current_user
+			%li= link_to (_'My Account'), user_path(current_user)
+			%li= link_to (_'Logout'), logout_path, :method => :post
+		- else
+			%li= link_to (_'Login'), login_path
+
