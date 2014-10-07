@@ -2,6 +2,10 @@ Given(/^I am on the (.+) page$/) do |page_name|
 	visit path_to(page_name.to_sym)
 end
 
+Given(/^I visit the (.+) path$/) do |path_name|
+  visit send("#{path_name}_path")
+end
+
 Given(/^I am on the (.+) site$/) do |language|
 	ApplicationController::set_host (get_language_code(language) + '.bikebike.org')
 end
