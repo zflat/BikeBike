@@ -1,12 +1,14 @@
-- page_title = 'Bike!Bike! Reources'
+- page_title = 'Bike!Bike! '+_('page.Resources')
 - title page_title
 - banner_title page_title
 - description 'Bike!Bike! list of resources - Bike Collective Wiki, ThinkTank, Bike!Bike! photos and documents'
 
 .row
 	.columns
-		%p
-			Here is a list of online resources available to commmunity bike projects. The bike collective wiki in particlular has great start up kits and many helpful articles about how community bike shops operate. &nbsp;The think tank is a list serve with over 600 contributors. When you join the list, you can talk to community bike shops from all over the world about how to better organize and operate a shop.
+		%p 
+			=I18n.t('resources.summary', :p)
+		%p 
+			/Here is a list of online resources available to commmunity bike projects. The bike collective wiki in particlular has great start up kits and many helpful articles about how community bike shops operate. &nbsp;The think tank is a list serve with over 600 contributors. When you join the list, you can talk to community bike shops from all over the world about how to better organize and operate a shop.
 		%ul
 			%li
 				%a{href: 'http://www.bikecollectives.org/wiki/index.php?title=Main_Page', target: '_blank'}
