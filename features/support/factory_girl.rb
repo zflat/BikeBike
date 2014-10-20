@@ -1,4 +1,9 @@
+# See testing factory girl cucumber
+# http://www.claytonlz.com/2010/03/zero-to-tested-with-cucumber-and-factory-girl/
+
 FactoryGirl.define do
+
+if false
 	factory :upcoming_conference, :class => 'Conference' do
 		title				'My Bike!Bike!'
 		slug				'MyBikeBike'
@@ -10,6 +15,7 @@ FactoryGirl.define do
 		end_date 			Date.today - 26.days
 		conference_type_id	(ConferenceType.find_by(:slug => 'bikebike') || ConferenceType.create(:slug => 'bikebike')).id
 	end
+end
 
 	factory :org, :class => 'Organization' do
 		name				'My Organization'

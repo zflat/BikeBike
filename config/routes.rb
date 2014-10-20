@@ -46,7 +46,7 @@ BikeBike::Application.routes.draw do
 		post :nonmembers
 	end
 
-	resources :users
+	resources :users, :except => [:list, :destroy]
 	resources :user_sessions, :only => [:new, :create, :destroy]
 
 
