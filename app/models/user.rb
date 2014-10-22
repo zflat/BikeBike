@@ -2,7 +2,8 @@ class User < ActiveRecord::Base
   authenticates_with_sorcery! do |config|
     config.authentications_class = Authentication
   end
-  
+
+  validates :password, length: { minimum: 3 }
   validates :password, presence: true, confirmation: true, length: { minimum: 3 }, if: 'new_record?'
   validates :password_confirmation, presence: true, if: 'new_record?'
   
