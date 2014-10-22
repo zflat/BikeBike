@@ -1,21 +1,98 @@
 ---
-form.placeholder.Enter_your_username:
+world.ca.ns.name:
   languages: []
   pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+time.formats.date:
+  languages: []
+  pages:
+  - /
+  data: []
+date.month_names:
+  languages: []
+  pages:
+  - /
+  data: []
+conference.More_Info:
+  languages: []
+  pages:
+  - /
+  data: []
+Conferences:
+  languages: []
+  pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  - /resources
+  - /translations
+  - /translations/:lang
   - /users/new
+  - /users/:id
   - /login
   - /users/:id/edit
   data: []
-form.label.username:
+Organizations:
   languages: []
   pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  - /resources
+  - /translations
+  - /translations/:lang
   - /users/new
+  - /users/:id
   - /login
   - /users/:id/edit
+  data: []
+Resources:
+  languages: []
+  pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  - /resources
+  - /translations
+  - /translations/:lang
+  - /users/new
+  - /users/:id
+  - /login
+  - /users/:id/edit
+  data: []
+Login:
+  languages: []
+  pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  - /resources
+  - /translations
+  - /translations/:lang
+  - /users/new
+  - /users/:id
+  - /login
+  data: []
+donate.button_label:
+  languages: []
+  pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+conference.Register_Now:
+  languages: []
+  pages:
+  - /
+  data: []
+form.placeholder.Enter_your_step:
+  languages: []
+  pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
   data: []
 form.placeholder.Enter_your_email:
   languages: []
   pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
   - /users/new
   - /login
   - /users/:id/edit
@@ -23,9 +100,879 @@ form.placeholder.Enter_your_email:
 form.label.email:
   languages: []
   pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
   - /users/new
   - /login
   - /users/:id/edit
+  data: []
+register:
+  languages: []
+  pages:
+  - /
+  - /users/new
+  - /login
+  data: []
+world.ca.nb.name:
+  languages: []
+  pages:
+  - /
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.questions.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_firstname:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.firstname:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_lastname:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.lastname:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_username:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  - /users/new
+  - /login
+  - /users/:id/edit
+  data: []
+form.label.username:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  - /users/new
+  - /login
+  - /users/:id/edit
+  data: []
+registration.questions.housing:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.questions.housing.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.questions.housing_extra.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_.questions.housing_extra:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.questions.loaner_bike:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.questions.loaner_bike.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.questions.workshop:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.questions.workshop.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+'Yes':
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+'No':
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.questions.other:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_.questions.other:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+cancel:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+submit:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.email.registration.subject:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  vars:
+  - :conference_title
+  data: []
+register.email.registration.please_confirm:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  vars:
+  - :username
+  data: []
+register.email.registration.confirm_button:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.organizations.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.organizations.description:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+all_organizations:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ca.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+orgnizations_filter.placeholder:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+my_organizations:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.add_new_org:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.no_org:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+next:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.organizations.confirm_thanks.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.organizations.confirm_thanks.is_not_workshop_host.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.organizations.confirm_thanks.payment_notice:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.email.registration_confirmed.subject:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  vars:
+  - :conference_title
+  data: []
+register.email.registration_confirmed.thank_you:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.email.registration_confirmed.please_pay:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.email.registration_confirmed.pay_now:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.email.registration_confirmed.info:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+register.email.registration_confirmed.contact:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.thanks.complete.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.thanks.all_done.please_pay:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_confirmation_token:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.thanks.all_done.please_pay.currency:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+number.format:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+number.currency.format:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+number.precision.format:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_payment_amount:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.payment_amount:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+custom_amount:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.cancel.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.cancel.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+'no':
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+'yes':
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.cancelled.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.cancelled.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.thanks.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.thanks.remember_to_confirm:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+resend_confirmation_email:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+page.Resources:
+  languages: []
+  pages:
+  - /resources
+  data: []
+resources.summary:
+  languages: []
+  pages:
+  - /resources
+  data: []
+languages.list:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.active:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.inactive:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.af:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.am:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ar:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.az:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.be:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.bg:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.bh:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.bn:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.bo:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.bs:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ca:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.cs:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.cy:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.da:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.de:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.dz:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.el:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.en:
+  languages: []
+  pages:
+  - /translations
+  - /translations/:lang
+  data: []
+languages.eo:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.es:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.et:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.eu:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.fa:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.fi:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.fo:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.fr:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.fu:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.fy:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ga:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.gl:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.gu:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ha:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.he:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.hi:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.hr:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.hu:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.id:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.is:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.it:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ja:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.jv:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ka:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.km:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.kn:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ko:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ku:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.lb:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ln:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.lt:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.lv:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.mg:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.mk:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ml:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.mn:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.mo:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.mr:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ms:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.mt:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.my:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.na:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.nb:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ne:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.nl:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.nn:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ns:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.om:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.or:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.pa:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.pl:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ps:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.pt:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ro:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ru:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.se:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.sh:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.sk:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.sl:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.sm:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.so:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.sq:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.sr:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.sv:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.sw:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ta:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.te:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.th:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ti:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.tk:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.tl:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.to:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.tr:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.uk:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.ur:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.vi:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.wa:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.yo:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.zh:
+  languages: []
+  pages:
+  - /translations
+  data: []
+languages.zu:
+  languages: []
+  pages:
+  - /translations
+  data: []
+language_translations:
+  languages: []
+  pages:
+  - /translations/:lang
+  vars:
+  - :language
+  data: []
+translations.Key:
+  languages: []
+  pages:
+  - /translations/:lang
+  data: []
+translations.Pages:
+  languages: []
+  pages:
+  - /translations/:lang
+  data: []
+translations.Value:
+  languages: []
+  pages:
+  - /translations/:lang
   data: []
 form.label.password:
   languages: []
@@ -38,52 +985,6 @@ form.label.password_confirmation:
   pages:
   - /users/new
   - /login
-  data: []
-register:
-  languages: []
-  pages:
-  - /users/new
-  - /login
-  data: []
-Conferences:
-  languages: []
-  pages:
-  - /users/new
-  - /users/:id
-  - /
-  - /login
-  - /users/:id/edit
-  data: []
-Organizations:
-  languages: []
-  pages:
-  - /users/new
-  - /users/:id
-  - /
-  - /login
-  - /users/:id/edit
-  data: []
-Resources:
-  languages: []
-  pages:
-  - /users/new
-  - /users/:id
-  - /
-  - /login
-  - /users/:id/edit
-  data: []
-Login:
-  languages: []
-  pages:
-  - /users/new
-  - /users/:id
-  - /
-  - /login
-  data: []
-donate.button_label:
-  languages: []
-  pages:
-  - /
   data: []
 form.placeholder.Enter_your_login_email:
   languages: []

@@ -3,7 +3,7 @@
 
 FactoryGirl.define do
 
-if false
+
 	factory :upcoming_conference, :class => 'Conference' do
 		title				'My Bike!Bike!'
 		slug				'MyBikeBike'
@@ -15,7 +15,6 @@ if false
 		end_date 			Date.today - 26.days
 		conference_type_id	(ConferenceType.find_by(:slug => 'bikebike') || ConferenceType.create(:slug => 'bikebike')).id
 	end
-end
 
 	factory :org, :class => 'Organization' do
 		name				'My Organization'
