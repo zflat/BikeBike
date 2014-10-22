@@ -20,5 +20,10 @@ class User < ActiveRecord::Base
   has_many :organizations, through: :user_organization_relationships
   has_many :authentications, :dependent => :destroy
   accepts_nested_attributes_for :authentications
+
+  def self.rand_passwd(length=8)
+    chars = 'abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789!@#$%^&*)(+./-?'
+    Array.new(length) { chars[rand(chars.length)].chr }.join
+  end
   
 end

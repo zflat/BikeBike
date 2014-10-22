@@ -700,7 +700,7 @@ class ConferencesController < ApplicationController
 					user.firstname = session[:registration][:user][:firstname]
 					user.lastname = session[:registration][:user][:lastname]
                                         # Assign random password to user (initially, later let the user change it)
-					user.password = generate_passwd(15)
+					user.password = User::rand_passwd(25)
 					user.password_confirmation = user.password
 					user.save!
 
@@ -830,9 +830,4 @@ class ConferencesController < ApplicationController
 			}
 		)
 	end
-        private
-        def generate_passwd(length=8)
-          chars = 'abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789!@#$%^&*)(+'
-          Array.new(length) { chars[rand(chars.length)].chr }.join
-        end
 end
