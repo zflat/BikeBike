@@ -119,3 +119,25 @@ On hold until our design team determines a director for our identity.
 ## Testing Practices ##
 
 Our focus will be on integration testing using Capybara. While testing the app records all translations that it finds, whether or not they exist, and which pages that they were found on.
+
+### Unit testing ###
+
+Unit testing is done using the rspec framework.
+
+Run unit tests:
+
+      rspec spec
+
+
+### Integration testing ###
+
+Cucumber features interact with the browser using Capybara and javascrip with Poltergeist
+
+Run all features:
+
+      rake cucumber:all
+
+
+Run features without opening browser windows on failures:
+
+      rake:cucumber:silent

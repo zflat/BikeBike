@@ -72,7 +72,7 @@ Before do
 end
 
 After do |scenario|
-	save_and_open_page if scenario.failed?
+	save_and_open_page if scenario.failed? && !ENV['FAIL_SILENT']
 end
 
 #After do

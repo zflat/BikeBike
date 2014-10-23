@@ -4,6 +4,7 @@ world.ca.ns.name:
   pages:
   - /
   - /conferences/:conference_type/:conference_slug/register(/:step)
+  - /location/territories
   data: []
 time.formats.date:
   languages: []
@@ -25,51 +26,24 @@ Conferences:
   pages:
   - /
   - /conferences/:conference_type/:conference_slug/register(/:step)
-  - /resources
   - /translations
   - /translations/:lang
-  - /users/new
-  - /users/:id
-  - /login
-  - /users/:id/edit
   data: []
 Organizations:
   languages: []
   pages:
   - /
   - /conferences/:conference_type/:conference_slug/register(/:step)
-  - /resources
   - /translations
   - /translations/:lang
-  - /users/new
-  - /users/:id
-  - /login
-  - /users/:id/edit
   data: []
 Resources:
   languages: []
   pages:
   - /
   - /conferences/:conference_type/:conference_slug/register(/:step)
-  - /resources
   - /translations
   - /translations/:lang
-  - /users/new
-  - /users/:id
-  - /login
-  - /users/:id/edit
-  data: []
-Login:
-  languages: []
-  pages:
-  - /
-  - /conferences/:conference_type/:conference_slug/register(/:step)
-  - /resources
-  - /translations
-  - /translations/:lang
-  - /users/new
-  - /users/:id
-  - /login
   data: []
 donate.button_label:
   languages: []
@@ -93,31 +67,24 @@ form.placeholder.Enter_your_email:
   pages:
   - /
   - /conferences/:conference_type/:conference_slug/register(/:step)
-  - /users/new
-  - /login
-  - /users/:id/edit
   data: []
 form.label.email:
   languages: []
   pages:
   - /
   - /conferences/:conference_type/:conference_slug/register(/:step)
-  - /users/new
-  - /login
-  - /users/:id/edit
   data: []
 register:
   languages: []
   pages:
   - /
-  - /users/new
-  - /login
   data: []
 world.ca.nb.name:
   languages: []
   pages:
   - /
   - /conferences/:conference_type/:conference_slug/register(/:step)
+  - /location/territories
   data: []
 registration.questions.title:
   languages: []
@@ -148,17 +115,11 @@ form.placeholder.Enter_your_username:
   languages: []
   pages:
   - /conferences/:conference_type/:conference_slug/register(/:step)
-  - /users/new
-  - /login
-  - /users/:id/edit
   data: []
 form.label.username:
   languages: []
   pages:
   - /conferences/:conference_type/:conference_slug/register(/:step)
-  - /users/new
-  - /login
-  - /users/:id/edit
   data: []
 registration.questions.housing:
   languages: []
@@ -391,6 +352,35 @@ custom_amount:
   pages:
   - /conferences/:conference_type/:conference_slug/register(/:step)
   data: []
+registration.payment_confirm.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.payment_confirm.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  vars:
+  - :amount
+  data: []
+cancel_payment:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+confirm_payment:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.thanks.all_done.paid:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  vars:
+  - :city
+  data: []
 registration.cancel.title:
   languages: []
   pages:
@@ -436,15 +426,1815 @@ resend_confirmation_email:
   pages:
   - /conferences/:conference_type/:conference_slug/register(/:step)
   data: []
-page.Resources:
+form.placeholder.Enter_your_workshop_index:
   languages: []
   pages:
-  - /resources
+  - /conferences/:conference_type/:conference_slug/register(/:step)
   data: []
-resources.summary:
+registration.workshop.title:
   languages: []
   pages:
-  - /resources
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_workshop_title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.workshop_title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_workshop_info:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.workshop_info:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.workshop.streams.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.workshop.streams.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_stream.select_one:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_stream.mechanics:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_stream.leisure:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_stream.interorganizational_relations:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_stream.ethics_public_relations:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_stream.organization_management:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.workshop.styles.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.workshop.styles.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_presentation_style.select_one:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_presentation_style.discussion:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_presentation_style.panel:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_presentation_style.presentation:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_presentation_style.hands-on:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+workshop_presentation_style.other:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.workshop.notes.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.workshop.notes.help:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_workshop_notes:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.add_another_workshop:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_new_org_index:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.new_organization.title:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_organization_name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.organization_name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_organization_info:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.organization_info:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_organization_email:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.organization_email:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_organization_street:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.organization_street:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.placeholder.Enter_your_organization_city:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.organization_city:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ad.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ae.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.af.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ag.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ai.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.al.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.am.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ao.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.aq.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ar.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.as.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.at.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.au.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.aw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ax.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.az.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ba.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bb.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bd.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.be.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bf.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bh.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bi.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bj.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bl.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bo.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bq.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.br.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bs.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bv.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.by.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.bz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cd.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cf.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ch.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ci.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ck.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cl.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.co.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cu.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cv.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cx.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cy.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.cz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.de.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.dj.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.dk.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.dm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.do.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.dz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ec.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ee.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.eg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.eh.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.er.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.es.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.et.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.fi.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.fj.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.fk.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.fm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.fo.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.fr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ga.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gb.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gd.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ge.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gf.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gh.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gi.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gl.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gp.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gq.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gs.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gu.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.gy.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.hk.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.hm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.hn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.hr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ht.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.hu.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.id.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ie.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.il.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.im.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.in.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.io.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.iq.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ir.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.is.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.it.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.je.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.jm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.jo.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.jp.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ke.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.kg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.kh.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ki.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.km.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.kn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.kp.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.kr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.kw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ky.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.kz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.la.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.lb.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.lc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.li.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.lk.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.lr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ls.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.lt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.lu.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.lv.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ly.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ma.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.md.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.me.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mf.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mh.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mk.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ml.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mo.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mp.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mq.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ms.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mu.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mv.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mx.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.my.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.mz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.na.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.nc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ne.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.nf.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ng.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ni.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.nl.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.no.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.np.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.nr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.nu.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.nz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.om.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pa.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pe.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pf.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ph.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pk.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pl.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ps.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.pw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.py.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.qa.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.re.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ro.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.rs.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ru.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.rw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sa.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sb.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sd.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.se.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sh.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.si.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sj.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sk.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sl.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.so.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ss.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.st.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sv.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sx.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sy.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.sz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.td.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tf.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.th.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tj.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tk.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tl.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.to.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tv.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.tz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ua.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ug.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.um.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.uy.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.uz.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.va.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.vc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ve.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.vg.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.vi.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.vn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.vu.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.wf.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ws.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ye.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.yt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.za.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.zm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.zw.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ak.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.al.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ar.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.as.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.az.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ca.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.co.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ct.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.dc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.de.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.fl.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ga.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.gu.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.hi.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ia.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.id.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.il.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.in.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ks.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ky.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.la.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ma.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.md.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.me.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.mi.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.mn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.mo.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.mp.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ms.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.mt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.nc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.nd.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ne.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.nh.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.nj.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.nm.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.nv.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ny.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.oh.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ok.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.or.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.pa.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.pr.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ri.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.sc.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.sd.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.tn.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.tx.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.um.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ut.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.va.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.vi.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.vt.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.wa.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.wi.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.wv.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.wy.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.aa.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ae.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.us.ap.name:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.logo:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+form.label.add_another_org:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+world.ca.ab.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.bc.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.mb.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.nl.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.nt.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.nu.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.on.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.pe.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.qc.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.sk.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+world.ca.yt.name:
+  languages: []
+  pages:
+  - /location/territories
+  data: []
+registration.register.no_name_error:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.register.no_organization_error:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.register.no_workshop_title_error:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
+  data: []
+registration.register.no_workshop_info_error:
+  languages: []
+  pages:
+  - /conferences/:conference_type/:conference_slug/register(/:step)
   data: []
 languages.list:
   languages: []
@@ -973,70 +2763,4 @@ translations.Value:
   languages: []
   pages:
   - /translations/:lang
-  data: []
-form.label.password:
-  languages: []
-  pages:
-  - /users/new
-  - /login
-  data: []
-form.label.password_confirmation:
-  languages: []
-  pages:
-  - /users/new
-  - /login
-  data: []
-form.placeholder.Enter_your_login_email:
-  languages: []
-  pages:
-  - /login
-  data: []
-form.placeholder.Enter_your_login_password:
-  languages: []
-  pages:
-  - /login
-  data: []
-Sign_In:
-  languages: []
-  pages:
-  - /login
-  data: []
-facebook_sign_in:
-  languages: []
-  pages:
-  - /login
-  data: []
-user.Create_Account:
-  languages: []
-  pages:
-  - /login
-  data: []
-user.why_register:
-  languages: []
-  pages:
-  - /login
-  data: []
-My Account:
-  languages: []
-  pages:
-  - /
-  - /users/:id
-  - /users/:id/edit
-  data: []
-Logout:
-  languages: []
-  pages:
-  - /
-  - /users/:id
-  - /users/:id/edit
-  data: []
-form.label.avatar:
-  languages: []
-  pages:
-  - /users/:id/edit
-  data: []
-save:
-  languages: []
-  pages:
-  - /users/:id/edit
   data: []
