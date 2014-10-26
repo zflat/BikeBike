@@ -6,8 +6,23 @@ BikeBike::Application.routes.draw do
 	#resources :workshop_facilitators
 	#resources :registration_form_fields
 
-	resources :conference_types, :param => :type, :path => '/conferences', :as => :conference, :except => :index do
-		resources :conferences, :param => :slug, :path => '/' do
+#  get ':controller/:conference_type/:conference_slug', controller: /conferences\/[^\/]+/, action: :show
+
+  resources :conferences, :param => :slug, :path => 'conferences/:conference_type' do
+
+    match 'register(/:step)' => 'conferences#register', via: [:get, :post]
+    get 'register/confirm/:confirmation_token' => 'conferences#register_confirm'
+    match 'register/pay-registration/:confirmation_token' => 'conferences#register_pay_registration', via: [:get, :post]
+    get 'register/paypal-confirm/:confirmation_token' => 'conferences#register_paypal_confirm'
+    get 'register/paypal-cancel/:confirmation_token' => 'conferences#register_paypal_cancel'
+    get 'registrations' => 'conferences#registrations'
+  end
+
+  resources :conferences, :only => :index
+
+
+#	resources :conference_types, :param => :type, :path => '/conferences', :as => :conference, :except => :index do
+#		resources :conferences, :param => :slug, :path => '/' do
 			#get :hosts
 			#get :registration
 			#get :registration
@@ -15,12 +30,11 @@ BikeBike::Application.routes.draw do
 			#get :register, :param => 'step'
             #post 'register/next' => 'conferences#register_submit'
             # get 'register/workshop-test/' => 'conferences#workshop_test'
-            match 'register(/:step)' => 'conferences#register', via: [:get, :post]
-            get 'register/confirm/:confirmation_token' => 'conferences#register_confirm'
-            match 'register/pay-registration/:confirmation_token' => 'conferences#register_pay_registration', via: [:get, :post]
-            get 'register/paypal-confirm/:confirmation_token' => 'conferences#register_paypal_confirm'
-            get 'register/paypal-cancel/:confirmation_token' => 'conferences#register_paypal_cancel'
-            get 'registrations' => 'conferences#registrations'
+
+
+
+
+
             #patch 'register/step/:step' => 'conferences#register_step'
 			#resources :registrations, :path => 'registration' do
 			#	get :form, on: :collection
@@ -34,10 +48,9 @@ BikeBike::Application.routes.draw do
             #post 'registration/form/reorder' => 'conferences#reorder', as: 'registration_reorder'
 			
             #post 'registration/form/reorder' => 'conferences#reorder', as: 'registration_reorder'
-		end
-	end
+#		end
+#	end
 
-	resources :conferences, :only => :index
 
 	resources :organizations, :param => 'slug' do
 		get :members
