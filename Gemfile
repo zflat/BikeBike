@@ -35,7 +35,7 @@ gem 'paypal-express'
 
 group :development, :test do
 	gem 'rspec'
-	gem 'rspec-rails'
+	gem 'rspec-rails', '~>3.0.2'
 end
 
 group :development do
