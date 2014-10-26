@@ -8,6 +8,7 @@ BikeBike::Application.routes.draw do
 
 #  get ':controller/:conference_type/:conference_slug', controller: /conferences\/[^\/]+/, action: :show
 
+  resources :conferences, :only => :index
   resources :conferences, :param => :slug, :path => 'conferences/:conference_type' do
 
     match 'register(/:step)' => 'conferences#register', via: [:get, :post]
@@ -18,7 +19,7 @@ BikeBike::Application.routes.draw do
     get 'registrations' => 'conferences#registrations'
   end
 
-  resources :conferences, :only => :index
+
 
 
 #	resources :conference_types, :param => :type, :path => '/conferences', :as => :conference, :except => :index do
