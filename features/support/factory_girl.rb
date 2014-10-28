@@ -20,3 +20,26 @@ FactoryGirl.define do
 end
 
 World(FactoryGirl::Syntax::Methods)
+
+def create_org(name = nil, location = nil)
+	org = FactoryGirl.create(:org)
+	found_location = nil
+	if !location.nil?
+		l = Geocoder.search(location).first
+		begin
+			found_location = Location.new(city: l.city, territory: l.province_code, country: l.country_code, latitude: l.latitude, longitude: l.longitude)
+		rescue; end
+		if found_location.nil?
+			return
+		end
+	end
+	if !name.nil?
+		org.name = name
+		org.slug = org.generate_slug(name, found_location)
+	end
+	if !found_location.nil?
+		org.locations << found_location
+	end
+	org.save!
+	org
+end

@@ -35,13 +35,6 @@ begin
     desc 'Run all features'
     task :all => [:ok, :wip]
 
-    Cucumber::Rake::Task.new(:set_silent_fail, 'Run features but do not open browser on fail') do |t|
-      ENV['FAIL_SILENT'] = 'true'
-    end
-
-    desc 'Run all features but do not open browser on fail'
-    task :silent => [:set_silent_fail, :all]
-
     task :statsetup do
       require 'rails/code_statistics'
       ::STATS_DIRECTORIES << %w(Cucumber\ features features) if File.exist?('features')
